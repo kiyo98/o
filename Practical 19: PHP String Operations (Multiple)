@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>String Operations</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px; 
+        } 
+ 
+        input { 
+            margin-bottom: 10px; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+<h2>String Operations</h2> 
+ 
+<form method="post">     Enter String: 
+    <input type="text" name="str"><br> 
+     Enter Number (for removing zeros): 
+    <input type="text" name="num"><br> 
+ 
+    <input type="submit" value="Submit"> 
+</form> 
+ 
+<?php 
+if($_SERVER["REQUEST_METHOD"] == "POST") { 
+ 
+    $str = $_POST["str"]; 
+    $num = $_POST["num"]; 
+ 
+    echo "<h3>Results:</h3>"; 
+ 
+    echo "Uppercase: " . strtoupper($str) . "<br>";     echo "Lowercase: " . strtolower($str) . "<br>";     echo "First Character Uppercase: " . ucfirst($str) . "<br>";     echo "All Words First Letter Uppercase: " . ucwords($str) . "<br>"; 
+ 
+    echo "Remove Leading Zeros: " . ltrim($num, "0") . "<br>"; 
+ 
+    echo "Reverse: " . strrev($str) . "<br>";     echo "Length: " . strlen($str) . "<br>";     echo "Substring (0,3): " . substr($str, 0, 3); 
+} 
+?> 
+ 
+</body> 
+</html> 
