@@ -1,0 +1,21 @@
+ 
+<!DOCTYPE html> 
+<html> 
+<body> 
+ 
+<h2>Student Portfolio</h2> 
+ 
+<p><b>Name:</b> Kshitij</p> 
+<p><i>Course:</i> B.E</p> 
+ 
+Hobbies:<br> 
+<input type="checkbox"> Coding<br> 
+<input type="checkbox"> Gaming<br> 
+ 
+Gender:<br> 
+<input type="radio" name="g"> Male 
+<input type="radio" name="g"> Female 
+ 
+</body> 
+</html> 
+ 
