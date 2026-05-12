@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Project Registration</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px; 
+        } 
+ 
+        form { 
+            border: 1px solid black;             padding: 10px;             width: 300px; 
+        } 
+ 
+        input { 
+            margin-bottom: 10px;             width: 100%; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+<h2>Project Competition Registration</h2> 
+ 
+<form method="post">     Name: 
+    <input type="text" name="name"> 
+     Email: 
+    <input type="email" name="email"> 
+     Project Title: 
+    <input type="text" name="project"> 
+ 
+    <input type="submit" value="Submit"> 
+</form> 
+ 
+<?php 
+if($_SERVER["REQUEST_METHOD"] == "POST") {     echo "<h3>Submitted Details:</h3>";     echo "Name: " . $_POST["name"] . "<br>";     echo "Email: " . $_POST["email"] . "<br>";     echo "Project: " . $_POST["project"]; 
+} 
+?> 
+ 
+</body> 
+</html> 
+ 
