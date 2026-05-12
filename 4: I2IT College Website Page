@@ -1,0 +1,49 @@
+<<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>I2IT College</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px; 
+        }         h1 { 
+            text-align: center; 
+        }            img {             display: block;             margin: auto;             width: 100px; 
+        }            a {             display: block;             text-align: center;             margin: 10px; 
+        }            table {             border-collapse: collapse;             width: 60%;             margin: auto; 
+        }            th, td {             border: 1px solid black;             padding: 8px;             text-align: center; 
+        }            th {             background-color: lightgray; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+<h1>I2IT College</h1> 
+   <img src="https://via.placeholder.com/100"> 
+   <a href="https://www.isquareit.edu.in">Visit Official Website</a> 
+   <table> 
+    <tr> 
+        <th>Course</th> 
+        <th>Subject</th> 
+    </tr> 
+ 
+    <tr> 
+        <td>B.Tech</td> 
+        <td>DBMS</td> 
+    </tr> 
+ 
+    <tr> 
+        <td>B.Tech</td> 
+        <td>Operating System</td> 
+    </tr> 
+ 
+     
+<tr> 
+        <td>B.Tech</td> 
+        <td>Web Development</td> 
+    </tr> 
+</table> 
+ 
+</body> 
+</html> 
+ 
