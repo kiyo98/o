@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>I2IT TechCon 2025</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px; 
+        } 
+ 
+        h1, h2 { 
+            text-align: center; 
+        } 
+         nav { 
+            text-align: center;             margin-bottom: 20px; 
+        } 
+ 
+        nav a {             margin: 10px;             text-decoration: none;             color: black; 
+        } 
+ 
+        table { 
+            border-collapse: collapse;             width: 60%;             margin: auto; 
+        } 
+ 
+        th, td { 
+            border: 1px solid black;             padding: 8px;             text-align: center; 
+        } 
+ 
+        form { 
+            border: 1px solid black;             padding: 10px;             width: 300px;             margin: auto; 
+        } 
+ 
+        input, textarea {             margin-bottom: 10px;             width: 100%; 
+        } 
+    </style> 
+</head> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<body> 
+ 
+<h1>I2IT TechCon 2025</h1> 
+ 
+<nav> 
+    <a href="#about">About</a> 
+    <a href="#schedule">Schedule</a> 
+    <a href="#contact">Contact</a> 
+</nav> 
+ 
+<h2 id="about">About</h2> 
+<p style="text-align:center;"> 
+    TechCon 2025 is a technology event showcasing innovations, workshops, and expert talks. </p> 
+ 
+<h2 id="schedule">Schedule</h2> 
+ 
+<table> 
+    <tr> 
+        <th>Time</th> 
+        <th>Event</th> 
+    </tr> 
+    <tr> 
+        <td>10:00 AM</td> 
+        <td>Opening Ceremony</td> 
+    </tr> 
+    <tr> 
+        <td>11:00 AM</td> 
+        <td>Technical Workshop</td> 
+    </tr> 
+    <tr> 
+        <td>2:00 PM</td> 
+        <td>Guest Lecture</td> 
+    </tr> 
+</table> 
+ 
+<h2 id="contact">Contact</h2> 
+ 
+<form>     Name: 
+    <input type="text"> 
+     Email: 
+    <input type="email"> 
+     Message: 
+    <textarea rows="3"></textarea> 
+ 
+    <input type="submit" value="Submit"> 
+</form> 
+ 
+</body> 
+</html> 
+ 
+ 
