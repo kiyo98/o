@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>DOM Example</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px; 
+        } 
+ 
+        button {             padding: 5px; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+<h2>Dynamic Content using DOM</h2> 
+ 
+<p id="output">Click the button to see change</p> 
+ 
+<button onclick="changeText()">Click Me</button> 
+ 
+<script> 
+    function changeText() { 
+        document.getElementById("output").innerHTML = "Content changed using JavaScript 
+DOM"; 
+    } 
+</script> 
+ 
+</body> 
+</html> 
