@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>String Operations</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+<h2>String Manipulation</h2> 
+ 
+<form method="post">     Enter String: 
+    <input type="text" name="str"> 
+    <input type="submit" value="Submit"> 
+</form> 
+ 
+<?php 
+if($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $str = $_POST["str"]; 
+ 
+    echo "<h3>Results:</h3>";     echo "Original String: " . $str . "<br>";     echo "Length: " . strlen($str) . "<br>";     echo "Reverse: " . strrev($str) . "<br>";     echo "Substring (0,3): " . substr($str, 0, 3); 
+} 
+?> 
+ 
+</body> 
+</html> 
+ 
