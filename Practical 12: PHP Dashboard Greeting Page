@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Dashboard</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px;             text-align: center; 
+        } 
+ 
+        .box { 
+            border: 1px solid black;             padding: 20px;             display: inline-block; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+<div class="box"> 
+    <h2>Welcome to Dashboard</h2> 
+ 
+    <?php 
+        date_default_timezone_set("Asia/Kolkata");         echo "Current Date: " . date("Y-m-d") . "<br>";         echo "Current Time: " . date("H:i:s"); 
+    ?> 
+</div> 
+ 
+</body> 
+</html> 
+ 
+ 
+ 
