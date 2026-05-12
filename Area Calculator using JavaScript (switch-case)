@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Area Calculator</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px; 
+        } 
+ 
+        input, select {             margin: 5px; 
+        } 
+    </style> 
+       <script>         function calculate() { 
+            let a = parseFloat(document.getElementById("val1").value);             let b = parseFloat(document.getElementById("val2").value);             let shape = document.getElementById("shape").value;             let result; 
+ 
+            switch(shape) {                 case "rectangle":                     result = a * b;                     break;                  case "triangle": 
+                    result = 0.5 * a * b;                     break;                  case "circle": 
+                    result = 3.14 * a * a;                     break;                  default: 
+                    result = "Invalid"; 
+            }                document.getElementById("res").innerHTML = result; 
+        } 
+    </script>  
+</head> 
+   <body> 
+   <h2>Area Calculator</h2> 
+ 
+<select id="shape"> 
+    <option value="rectangle">Rectangle</option> 
+    <option value="triangle">Triangle</option> 
+    <option value="circle">Circle</option> 
+</select><br> 
+ 
+<input type="text" id="val1" placeholder="Enter value 1"><br> <input type="text" id="val2" placeholder="Enter value 2"><br> 
+ 
+<button onclick="calculate()">Calculate Area</button> 
+ 
+<h3>Result: <span id="res"></span></h3> 
+   </body> 
+</html> 
+ 
