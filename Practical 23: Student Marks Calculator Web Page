@@ -1,0 +1,66 @@
+<<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Marks Calculator</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 0; 
+            background: linear-gradient(to right, lightblue, lightgreen); 
+        } 
+ 
+        .container {             width: 300px;             margin: 50px auto;             padding: 20px;             border-radius: 10px;             box-shadow: 2px 2px 10px gray;             background: white; 
+        } 
+ 
+        input {             width: 100%;             margin: 5px 0; 
+        } 
+ 
+        button {             width: 100%;             padding: 5px; 
+        } 
+ 
+        button:hover { 
+            background-color: lightgray; 
+        } 
+    </style> 
+ 
+    <script> 
+        function calculate() { 
+            let name = document.getElementById("name").value; 
+ 
+            let m1 = parseFloat(document.getElementById("m1").value);             let m2 = parseFloat(document.getElementById("m2").value);             let m3 = parseFloat(document.getElementById("m3").value);             let m4 = parseFloat(document.getElementById("m4").value);             let m5 = parseFloat(document.getElementById("m5").value); 
+ 
+            let total = m1 + m2 + m3 + m4 + m5;             let per = total / 5;             let grade; 
+ 
+            if(per >= 75) grade = "A";             else if(per >= 60) grade = "B";             else if(per >= 50) grade = "C";             else grade = "Fail"; 
+ 
+            document.getElementById("result").innerHTML = 
+                "Name: " + name + "<br>" + 
+                "Total: " + total + "<br>" + 
+                "Percentage: " + per + "<br>" + 
+                "Grade: " + grade; 
+        } 
+    </script> 
+</head> 
+ 
+<body> 
+ 
+<div class="container"> 
+ 
+<h2>Marks Calculator</h2> 
+ 
+<input type="text" id="name" placeholder="Enter Name"> 
+ 
+<input type="text" id="m1" placeholder="Subject 1"> 
+<input type="text" id="m2" placeholder="Subject 2"> 
+<input type="text" id="m3" placeholder="Subject 3"> 
+<input type="text" id="m4" placeholder="Subject 4"> 
+<input type="text" id="m5" placeholder="Subject 5"> 
+ 
+<button onclick="calculate()">Calculate</button> 
+ 
+<h3 id="result"></h3> 
+ 
+</div> 
+ 
+</body> 
+</html> 
+ 
