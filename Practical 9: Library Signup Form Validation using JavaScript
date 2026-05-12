@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Library Signup</title> 
+ 
+    <style>         body { 
+            font-family: Arial;             margin: 20px; 
+        } 
+ 
+        form { 
+            border: 1px solid black;             padding: 10px;             width: 300px; 
+        } 
+ 
+        input { 
+            margin-bottom: 10px;             width: 100%; 
+        } 
+    </style> 
+ 
+    <script> 
+        function validate() { 
+            let name = document.getElementById("name").value;             let email = document.getElementById("email").value;             let mobile = document.getElementById("mobile").value; 
+ 
+            if(name == "" || email == "" || mobile == "") {                 alert("All fields are required");                 return false; 
+            } 
+ 
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;             if(!email.match(emailPattern)) {                 alert("Invalid Email");                 return false; 
+            } 
+ 
+            if(mobile.length != 10 || isNaN(mobile)) {                 alert("Invalid Mobile Number");                 return false; 
+            } 
+ 
+            alert("Form Submitted Successfully");             return true; 
+        } 
+    </script> 
+</head> 
+ 
+<body> 
+ 
+<h2>Library Signup Form</h2> 
+ 
+<form onsubmit="return validate()">     Name: 
+    <input type="text" id="name"> 
+     Email: 
+    <input type="text" id="email"> 
+     Mobile No: 
+    <input type="text" id="mobile"> 
+ 
+    <input type="submit" value="Register"> 
+</form> 
+ 
+</body> 
+</html> 
